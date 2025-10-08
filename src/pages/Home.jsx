@@ -17,13 +17,13 @@ export default function Home() {
         <div className="mt-6 flex gap-4 flex-wrap justify-center">
           <a
             className="px-6 py-3 rounded-lg bg-pink-500/90 text-black font-semibold hover:scale-105 transition-transform"
-            href="/projects"
+            href="/Projects"
           >
             View Projects
           </a>
           <a
             className="px-6 py-3 rounded-lg bg-white/20 border border-white/30 text-gray-100 font-semibold hover:scale-105 transition-transform"
-            href="/contact"
+            href="/Contact"
           >
             Contact Me
           </a>
