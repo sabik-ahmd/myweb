@@ -41,7 +41,7 @@ Designed to highlight my projects, skills, and contact information — built wit
 ---
 
 ## 📂 Folder Structure
----
+
 glass-portfolio/
 ├── src/
 │ ├── assets/
