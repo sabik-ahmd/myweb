@@ -43,30 +43,29 @@ Designed to highlight my projects, skills, and contact information — built wit
 ## 📂 Folder Structure
 
 glass-portfolio/
-├── public/
-│ ├── favicon.png
-│ └── index.html
 ├── src/
 │ ├── assets/
 │ │ └── projects/
-│ │ ├── microtech.png
-│ │ ├── pixel-frames.png
-│ │ ├── portfolio.png
 │ │ ├── text.png
 │ │ ├── job.png
-│ │ └── exam.jpeg
+│ │ ├── exam.jpeg
+│ │ └── more images...
 │ ├── components/
 │ │ ├── Header.jsx
-│ │ ├── Footer.jsx
-│ │ └── SocialIcons.jsx
+│ │ ├── SocialIcons.jsx
+│ │ └── Footer.jsx
 │ ├── pages/
 │ │ ├── Home.jsx
+│ │ ├── About.jsx
 │ │ ├── Projects.jsx
 │ │ └── Contact.jsx
 │ ├── App.jsx
 │ ├── main.jsx
 │ └── styles.css
-└── package.json
+├── index.html
+├── package.json
+├── tailwind.config.js
+└── README.md
 
 ---
 
