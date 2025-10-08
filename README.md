@@ -38,7 +38,7 @@ Designed to highlight my projects, skills, and contact information — built wit
 | **Icons**              | React Icons            |
 | **Deployment**         | GitHub Pages / Netlify |
 
----
+"---
 
 ## 📂 Folder Structure
 
@@ -66,7 +66,7 @@ glass-portfolio/
 ├── package.json
 ├── tailwind.config.js
 └── README.md
----
+---"
 
 ## ⚙️ Installation & Setup
 
