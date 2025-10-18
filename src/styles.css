@@ -2,19 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Page background */
+/* 🌌 Background */
 
 body {
-    @apply bg-gray-900 text-white min-h-screen;
+    @apply bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white min-h-screen font-sans;
 }
 
 
-/* Glassmorphism */
+/* 🪩 Neon Glass Card */
 
 .glass-card {
-    @apply bg-gray-800/30 border border-gray-700/30 rounded-2xl backdrop-blur-md p-6 shadow-lg;
+    @apply rounded-2xl p-6 relative border transition-all duration-500;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
+
+/* Neon Hover Effect */
+
+.glass-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    box-shadow: 0 12px 40px rgba(168, 85, 247, 0.5), 0 0 20px rgba(236, 72, 153, 0.3);
+}
+
+
+/* Neon Animated Border Glow */
+
+.glass-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(120deg, #ec4899, #a855f7, #3b82f6);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.glass-card:hover::before {
+    opacity: 1;
+}
+
+
+/* Buttons */
+
+.btn-glass {
+    @apply px-6 py-3 rounded-lg font-semibold text-black transition-all duration-300;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.btn-glass:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.6);
+}
+
+
+/* Gradient Text */
+
+.gradient-text {
+    background: linear-gradient(to right, #ec4899, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header */
+
 .glass-header {
-    @apply bg-gray-800/40 backdrop-blur-sm border-b border-gray-700/40;
+    @apply backdrop-blur-md border-b border-white/10;
+    background: rgba(17, 24, 39, 0.6);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Neon Logo Blink */
+
+@keyframes blink {
+    0%,
+    100% {
+        box-shadow: 0 0 10px #a855f7, 0 0 25px #ec4899;
+        opacity: 1;
+    }
+    50% {
+        box-shadow: 0 0 25px #3b82f6, 0 0 40px #a855f7;
+        opacity: 0.85;
+    }
+}
+
+.animate-blink {
+    animation: blink 1.5s infinite ease-in-out;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .glass-card {
+        @apply p-4;
+    }
 }
