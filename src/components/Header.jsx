@@ -27,7 +27,7 @@ export default function Header() {
             AS. | Dev
           </div>
           <span className="font-semibold text-lg text-white group-hover:text-indigo-300 transition">
-            Sabik
+            Ahammad Sabik
           </span>
         </Link>
 

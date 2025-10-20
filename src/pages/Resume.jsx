@@ -6,7 +6,7 @@ export default function Resume() {
 
   return (
     <section className="flex flex-col items-center text-center py-16 px-4 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 min-h-screen">
-      <div className="glass-card w-full max-w-4xl p-8 sm:p-12 flex flex-col gap-6 shadow-2xl hover:scale-105 transition-transform duration-300">
+      <div className="glass-card w-full max-w-4xl p-6 sm:p-12 flex flex-col gap-6 shadow-2xl hover:scale-105 transition-transform duration-300">
         
         <h1 className="text-2xl sm:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
           My Resume
@@ -18,8 +18,8 @@ export default function Resume() {
         </p>
 
         {/* Education & Skills Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 w-full">
-          <div className="glass-card p-4 sm:p-6 text-left shadow-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-6 w-full">
+          <div className="glass-card p-4 sm:p-6 text-left shadow-lg w-full">
             <h3 className="text-lg font-semibold text-indigo-300 mb-2">Education</h3>
             <ul className="text-gray-200 space-y-2 text-sm sm:text-base">
               <li>
@@ -37,7 +37,7 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div className="glass-card p-4 sm:p-6 text-left shadow-lg">
+          <div className="glass-card p-4 sm:p-6 text-left shadow-lg w-full">
             <h3 className="text-lg font-semibold text-indigo-300 mb-2">Skills</h3>
             <ul className="text-gray-200 space-y-2 text-sm sm:text-base">
               <li>⚡ Frontend: React, Tailwind CSS, JavaScript, HTML5, CSS3</li>
@@ -73,7 +73,7 @@ export default function Resume() {
             href="/assets/sabik.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 w-full sm:max-w-2xl mx-auto block rounded-lg overflow-hidden shadow-lg border border-white/20"
+            className="mt-6 sm:mt-8 w-full sm:max-w-2xl mx-auto block rounded-lg overflow-hidden shadow-lg border border-white/20"
           >
             <img
               src="/assets/sabik-preview.png"
