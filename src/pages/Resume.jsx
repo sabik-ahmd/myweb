@@ -51,7 +51,7 @@ export default function Resume() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8 w-full">
           <a
-            href="/assets/sabik.pdf"
+            href="/sabik.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-black font-semibold hover:scale-105 transition-transform"
@@ -67,21 +67,20 @@ export default function Resume() {
           </button>
         </div>
 
-        {/* Resume Preview */}
+        {/* Resume PDF Preview */}
         {showResume && (
-          <a
-            href="/assets/sabik.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 sm:mt-8 w-full sm:max-w-2xl mx-auto block rounded-lg overflow-hidden shadow-lg border border-white/20"
-          >
-            <img
-              src="/assets/sabik-preview.png"
-              alt="Resume Preview"
-              className="w-full h-auto"
-            />
-            <p className="text-gray-400 text-sm mt-2 text-center">Tap image to view full resume</p>
-          </a>
+          <div className="mt-6 sm:mt-8 w-full sm:max-w-3xl mx-auto rounded-lg overflow-hidden shadow-lg border border-white/20">
+            <iframe
+              src="/sabik.pdf"
+              title="Resume Preview"
+              width="100%"
+              height="700px"
+              className="rounded-lg"
+            ></iframe>
+            <p className="text-gray-400 text-sm mt-2 text-center">
+              Viewing embedded resume — open above for full screen
+            </p>
+          </div>
         )}
 
         <p className="text-gray-400 mt-6 text-sm italic">
